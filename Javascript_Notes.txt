@@ -1,1 +1,117 @@
 JAVASCRIPT
+
+Day1:
+
+install VS CODE
+setting VS CODE
+
+install LIVE SERVER
+install Prettier
+
+in settings.json file 
+{
+  "workbench.colorTheme": "Default Light Modern",
+  "editor.fontSize": 22,
+  "debug.console.fontSize": 22,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
+
+emmet
+What is emmet?
+It allows us to speed us the workflow
+
+example:
+type:
+h1.emmeth1  then press enter
+<h1 class="emmeth1">lorem5</h1> #TYPE lorem5 then enter will give below dummy text
+<h1 class="emmeth1">Lorem ipsum dolor sit amet.</h1>
+emmet is already included as part of VS CODE
+
+
+
+Adding javascript to our project
+
+inline javascript:
+<button onclick="alert('Hello Orange CAT')">click me</button>
+ Very redundant way,not recommended if there is a lot of data
+
+internal javascript:
+  <!-- internal Javascript -->
+    <!-- <script>
+      document.querySelectorAll(".btn").forEach((item) => {
+        item.addEventListener("click", () => {
+          alert("this is awesome");
+        });
+      });
+    </script> -->
+   
+
+external javascript:
+Create a .js file then refer that file as source in the end of the html file
+document.querySelectorAll(".btn").forEach((item) => {
+  item.addEventListener("click", () => {
+    alert("this is awesome");
+  });
+});
+ <script src="Day1.js"></script>
+ 
+
+ Important Javascript Functions
+
+It is very important to know what is happenning in our code at certain point of time
+These three function return values from our code
+document.write('Hello Orange Cat')
+alert('Orange CAT)
+console.log('Orange CAT')
+
+
+Statement and Comments in JAVASCRIPT
+//Statements -SET OF INTSTRUCTIONS
+console.log('This is one statement');
+we could have multiple statement in same line, but better to have it in different line.
+console.log('This is one statement');console.log('This is one statement');console.log('This is one statement');
+although prettier will automatically format it
+
+Variables:
+
+Most basic building block
+store,access,modify ===value
+
+let day1_name='Orange The Cat'
+
+Assigning value later to the Variables
+Modifying the existing value
+let address,zip,state
+
+good practice is to use camelCase or under_score if the name has multiple strings
+
+Difference in const let and Var
+
+var in function scope
+
+block scope: let and const
+const can not be reassigned
+if we try to assign value to const we get 
+"Uncaught TypeError: Assignment to constant variable"
+
+
+Javascript is a loosely typed language
+We dont have to declare the type of the variable in Javascript
+based on the value of the variable the type of the variable will be decided
+
+Also how mathematical operation work on Javascript
+10/3
+3.3333333333333335
+10%3
+1
+
+% gives us remainder.
+
+string + integer is string
+2+'2'
+'22'
