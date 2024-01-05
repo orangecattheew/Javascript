@@ -115,3 +115,230 @@ Also how mathematical operation work on Javascript
 string + integer is string
 2+'2'
 '22'
+
+Day2
+IMplicit type conversion
+let number='10'
+let number2='20'
+const result=number2-number
+console.log(result)
+//here the Javascript will do implicit type conversion
+and we will get the correct result.
+this does not work when we try to + , then it just concatenates the string
+
+Datatypes:
+7 total
+//Primitive -string,number,boolean,null,undefined,Symbol
+//object-Arrays,FUnctions,Objects
+
+
+to find the type of, we canjust use
+console.log(typeof text/variable/function)
+
+type of null returns an Object but this is the bug in Javascript.
+
+
+Arrays
+[],0 index based
+
+easy way to store list of items.
+we can access and perform operations on them with great ease.
+
+we can access and reassign the value using array indexes
+
+Functions
+functions allow us to write some lines of code and then it becomes resuable 
+this helps reduce redundant code.
+
+declare function
+function function_name(){
+  //logic
+}
+invoke function
+
+function_name()
+
+function_with_arguments(argument_name){
+  //logic
+  console.log('perform operation and use argument_name'+ argument_name)
+}
+
+
+function_with_return(argument_name){
+  return argument_name*5
+}
+
+five_times=function_with_return(5)
+so five_times will be 5*5
+
+function expression
+another way to define a function
+create a variable and then assign a function to that variable
+
+const variable_name=function(num1,num2){
+  return num1+num2;
+}
+
+const thirdVAlue=variable_name(5,6)
+console.log(thirdVAlue)
+
+
+Arrow Functions
+const arrow_functions_example= (num1,num2)=>num1*num2
+arrow_functions_example(num1,num2)
+
+
+Objects in Javascript
+key/value pairs methods
+
+const person={
+  name:'Orange',
+  lastName:'CAT'
+}
+
+conditional Statements
+//== checks only value, whether the two values are equal or not
+///===checks both value and type
+console.log(23 == "23");
+console.log(23 === "23");
+
+logical operators:
+|| or
+&& AND
+
+console.log(true || false);
+console.log(true && false);
+const color = ["blue", "red", "yellow", "green"];
+
+color.forEach((element) => {
+  console.log(element);
+});
+
+// function
+let a = 5;
+let b = 6;
+function add(a, b) {
+  console.log(a + b);
+  return a + b;
+}
+
+const c = add(a, b);
+console.log(c);
+
+const d = function (a, b) {
+  return a * b;
+};
+console.log(d(33, 55));
+
+function calculateTotal(subTotal, tax) {
+  return subTotal + tax;
+}
+console.log(calculateTotal(55000, 1112));
+
+const calculateTotal_expression = function (subTotal, tax) {
+  return subTotal + tax;
+};
+
+q = calculateTotal_expression(112121, 66767645);
+console.log(q);
+
+let order1, order2, order3;
+function calculateResult(a, b, c) {
+  order1 = a;
+  order2 = b;
+  order4 = c;
+  console.log(order1, order2, order3);
+}
+
+console.log(typeof []);
+console.log(typeof 23);
+console.log(typeof "VAlue");
+console.log(typeof true);
+
+const person = {
+  _name: "Orange",
+  lastNAme: "CAT",
+  education: false,
+  say_hello: function () {
+    console.log("Hello My NAme is Orange");
+  },
+  say_bye() {
+    console.log("Bye");
+  },
+};
+person.say_hello();
+person.say_bye();
+
+const car = {
+  make: "hero",
+  model: "200",
+  year: 2011,
+  hybrid: false,
+  drive() {
+    console.log("I am driving");
+  },
+  stop() {
+    console.log("brake");
+  },
+  color: "white and blue",
+};
+car.drive();
+car.stop();
+
+console.log(23 == "23");
+console.log(23 === "23");
+
+console.log(true || false);
+console.log(true && false);
+
+Day3 : STRING PROPERTIES AND methods
+console.log(typeof 'string')
+console.log(typeof "string");
+console.log("string".length); //length is a property
+let text =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda!";
+console.log(text.length);
+console.log(text.toLowerCase());
+console.log(text.toUpperCase());
+console.log(text.charAt(0));
+console.log(text.indexOf("t"));
+console.log(text.replace(/o/g, "0"));
+console.log(text.slice(0, 3));
+console.log(text.slice(-3));
+
+Template literals:
+`${variable_name}`
+and this will evaluate the value of this Template literals
+`` this is template literals
+${} this is called interpolation which can evaluate value inside template literals
+This is the feature of ES6
+
+Array Properties and methods
+shift: removes element from start of an array
+unshift: adds element at the start of an array
+
+console.log(typeof "string");
+console.log("string".length); //length is a property
+let text =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda!";
+console.log(text.length);
+console.log(text.toLowerCase());
+console.log(text.toUpperCase());
+console.log(text.charAt(0));
+console.log(text.indexOf("t"));
+console.log(text.replace(/o/g, "0"));
+console.log(text.slice(0, 3));
+console.log(text.slice(-3));
+
+function fullName(firstName, lastName) {
+  return `${firstName} ${lastName}`.toUpperCase();
+}
+console.log(fullName("orange", "cat"));
+
+let fruits = ["apple", "orange", "bananana", "mango"];
+console.log(fruits.length - 1, fruits.reverse());
+console.log(fruits.concat("watermelon"));
+console.log(fruits.shift());
+console.log(fruits.push("Apple"));
+console.log(fruits.push("123"));
+console.log(fruits);
